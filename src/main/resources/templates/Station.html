@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcuticon"href="../resources/favicon.ico"th:href="@{/static/favicon.ico}">
+    <style>
+        .t_title {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            line-height: 80px;
+            color: #fff;
+        }
+
+        #chart_map {
+            /*cursor: pointer;*/
+        }
+
+        .t_show {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 2px;
+            background: #2C58A6;
+            padding: 2px 5px;
+            color: #fff;
+            /*cursor: pointer;*/
+        }
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="header">
+    <div class="bg_header">
+        <div class="header_nav fl t_title">
+            工艺看板信息显示平台
+        </div>
+    </div>
+</div>
+<!--main-->
+<div class="data_content">
+    <div class="data_main">
+        <div class="main_left fl">
+            <div class="left_1 t_btn6">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    工位编号
+                </div>
+                <div id="chart_1" class="chart"
+                     style="width:100%;height: 280px;text-align: center;font-size: 60px;color: white;padding-top: 90px;">
+                    <p><span class="StationNo"></span></p>
+                </div>
+            </div>
+            <div class="left_2">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    生产数量
+                </div>
+                <div id="chart_2" class="chart t_btn9"
+                     style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top: 70px">
+                    <p>计划数量:<span class="Production_Qty"></span></p>
+                    <p>实际生产数量:<span class="Actual_Qty"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="main_center fl">
+            <div class="center_text">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    工艺图片
+                </div>
+                <div id="chart_map" style="width:100%;height:570px;margin-top: 20px;padding-left: 10px;padding-right: 10px;">
+                    <img class="img" height="570px" width="100%" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main_right fr">
+            <div class="right_1">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    物料名称
+                </div>
+                <div id="chart_3" class="echart t_btn7"
+                     style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top: 90px;">
+                    <p><span class="MTL_Name"></span></p>
+                </div>
+            </div>
+            <div class="right_2">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    托盘类型
+                </div>
+                <div id="chart_4" class="echart fl t_btn4"
+                     style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top:110px;">
+                    <p><span class="Tray_Type"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data_bottom">
+        <div class="bottom_1 fl t_btn5">
+            <!--左上边框-->
+            <div class="t_line_box">
+                <i class="t_l_line"></i>
+                <i class="l_t_line"></i>
+            </div>
+            <!--右上边框-->
+            <div class="t_line_box">
+                <i class="t_r_line"></i>
+                <i class="r_t_line"></i>
+            </div>
+            <!--左下边框-->
+            <div class="t_line_box">
+                <i class="l_b_line"></i>
+                <i class="b_l_line"></i>
+            </div>
+            <!--右下边框-->
+            <div class="t_line_box">
+                <i class="r_b_line"></i>
+                <i class="b_r_line"></i>
+            </div>
+            <div style="text-align: center;padding-right: 40px;" class="main_title">
+                <img src="img/t_1.png" alt="">
+                工单编号
+            </div>
+            <div id="chart_5" class="echart fl"
+                 style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top: 120px;">
+                <p><span class="Order_Id"></span></p>
+            </div>
+        </div>
+        <div class="bottom_center fl">
+            <div class="bottom_2 fl">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    物料编号
+                </div>
+                <div class="main_table t_btn8"
+                     style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top: 90px;">
+                    <p><span class="MTL_No"></span></p>
+                </div>
+            </div>
+            <div class="bottom_3 fl">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i>
+                    <i class="l_t_line"></i>
+                </div>
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i>
+                    <i class="r_t_line"></i>
+                </div>
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i>
+                    <i class="b_l_line"></i>
+                </div>
+                <!--右下边框-->
+                <div class="t_line_box">
+                    <i class="r_b_line"></i>
+                    <i class="b_r_line"></i>
+                </div>
+                <div style="text-align: center;padding-right: 40px;" class="main_title">
+                    <img src="img/t_1.png" alt="">
+                    产品状态
+                </div>
+                <div class="main_table t_btn2"
+                     style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top: 90px;">
+                    <p><span class="State"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_4 fr">
+            <!--左上边框-->
+            <div class="t_line_box">
+                <i class="t_l_line"></i>
+                <i class="l_t_line"></i>
+            </div>
+            <!--右上边框-->
+            <div class="t_line_box">
+                <i class="t_r_line"></i>
+                <i class="r_t_line"></i>
+            </div>
+            <!--左下边框-->
+            <div class="t_line_box">
+                <i class="l_b_line"></i>
+                <i class="b_l_line"></i>
+            </div>
+            <!--右下边框-->
+            <div class="t_line_box">
+                <i class="r_b_line"></i>
+                <i class="b_r_line"></i>
+            </div>
+            <div style="text-align: center;padding-right: 40px;" class="main_title">
+                <img src="img/t_1.png" alt="">
+                仓库任务状态
+            </div>
+            <div class="main_table t_btn3"
+                 style="width:100%;height: 280px;text-align: center;font-size: 40px;color: white;padding-top: 90px;">
+                <p><span class="Task_State"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/common.js"></script>
+<script type="text/javascript">
+    var Ohref = decodeURI(window.location.href);
+    var StationNo = Ohref.split('?');
+    // alert(StationNo[1]);
+    var numref=decodeURI(StationNo[1])
+    num=numref.split("-");
+    console.log(num[0]);
+    console.log(num[1]);
+    $(".img").attr("src","img/250-12车架焊接工艺/"+StationNo[1]+".JPG")
+    $.ajax({
+        dataType: "JSON",
+        traditional: true,//这使json格式的字符不会被转码
+        type: "GET",
+        url: "/getInfo/" + StationNo[1],
+        success: function (data) {
+            console.log(data);
+            console.log(data.State)
+            $(".Production_Qty").text(data.Production_Qty);
+            $(".Actual_Qty").text(data.Actual_Qty);
+            $(".StationNo").text(data.StationNo);
+            $(".MTL_Name").text(data.MTL_Name);
+            $(".Tray_Type").text(data.Tray_Type);
+            $(".Order_Id").text(data.Order_Id);
+            $(".MTL_No").text(data.MTL_No);
+            var State, Task_State;
+            if (data.State == 0) {
+                State = '新建'
+            } else if (data.State == 1) {
+                State = '已下发'
+            } else if (data.State == 2) {
+                State = '进行中'
+            } else if (data.State == 3) {
+                State = '已完成'
+            } else if (data.State == -1) {
+                State = '已关闭'
+            }
+            $(".State").text(State);
+            if (data.Task_State == 0) {
+                Task_State = '未下发'
+            } else if (data.Task_State == 1) {
+                Task_State = '等待'
+            } else if (data.Task_State == 2) {
+                Task_State = '进行中'
+            } else if (data.Task_State == 3) {
+                Task_State = '完成'
+            } else if (data.Task_State == -1) {
+                Task_State = '失败'
+            } else if (data.Task_State == -2) {
+                Task_State = '取消'
+            }
+            $(".Task_State").text(Task_State);
+        },
+        error: function (data) {
+            // alert(data.responseText);
+        }
+    });
+
+    function myrefresh() {
+        if(num[1] == 'A'){
+            window.location.href="../Station.html?"+num[0]+"-B"
+        }else{
+            window.location.href="../Station.html?"+num[0]+"-A"
+        }
+         // window.location.reload();
+    }
+    setTimeout('myrefresh()', 30000); //指定1分钟刷新一次
+</script>
+</html>
