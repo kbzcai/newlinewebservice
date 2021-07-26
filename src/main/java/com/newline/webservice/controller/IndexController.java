@@ -59,8 +59,9 @@ public class IndexController {
     @GetMapping("/getInfo/{StationNo}")
     public String getInfo(@PathVariable("StationNo") String stationNo){
         System.out.println(stationNo);
-        StringBuffer ss;
-//        String urlString="http://localhost:32829/Report/GetDataBystation";
+//        StringBuffer ss;
+////        String urlString="http://localhost:32829/Report/GetDataBystation";
+//        String urlString="http://localhost:8081/index";
 //        BufferedReader br=null;
 //        try{
 //            //创建url请求
@@ -166,5 +167,6 @@ public class IndexController {
             }
         }
         return jsonStr;
+
     }
 }

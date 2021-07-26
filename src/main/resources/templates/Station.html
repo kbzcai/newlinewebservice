@@ -339,7 +339,6 @@
     num=numref.split("-");
     console.log(num[0]);
     console.log(num[1]);
-    $(".img").attr("src","img/250-12车架焊接工艺/"+StationNo[1]+".JPG")
     $.ajax({
         dataType: "JSON",
         traditional: true,//这使json格式的字符不会被转码
@@ -355,6 +354,7 @@
             $(".Tray_Type").text(data.Tray_Type);
             $(".Order_Id").text(data.Order_Id);
             $(".MTL_No").text(data.MTL_No);
+            $(".img").attr("src","img/"+data.MTL_Name+"/"+StationNo[1]+".JPG")
             var State, Task_State;
             if (data.State == 0) {
                 State = '新建'
