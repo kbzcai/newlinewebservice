@@ -90,34 +90,139 @@ public class IndexController {
 //                e.printStackTrace();
 //            }
 //        }
-        String jsonString="[{\n" +
-                "\t\"ID\": 6,    //ID\n" +
-                "\t\"Order_Id\": \"165515353\", //工单编号\n" +
-                "\t\"MTL_No\": \"31100-T527-000000\", //物料号\n" +
-                "\t\"MTL_Name\": \"SR650车架总成（白坯）\",//物料名称\n" +
-                "\t\"Tray_Type\": \" CX02-ZCZH-001 \",//托盘类型\n" +
-                "\t\"StationNo\": \"1-A\", //工位编号\n" +
-                "\t\"Production_Qty\": 100, //计划生产数量\n" +
-                "\t\"Actual_Qty\": 0, //实际生产数量\n" +
-                "\t\"State\": 0,   //状态 0新建，1已下发,2进行中,3已完成，-1已关闭\n" +
-                "\t\"Task_State\": 0, //仓库任务状态 0未下发，1等待，2进行中，3完成，-1失败，-2取消\n" +
+        String jsonString="[ {\n" +
+                "\t\"ID\": 1,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"1-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
                 "\t\"Batch\": null,\n" +
-                "\t\"Priority\": null, //优先级\n" +
-                "\t\"Remark\": null, //备注\n" +
-                "\t\"Create_Date\": \"2021-06-20 21:16:49\", //创建时间\n" +
-                "\t\"Create_UserId\": \"管理员\",//创建人\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
                 "\t\"Update_Date\": null,\n" +
                 "\t\"Update_UserId\": null,\n" +
-                "\t\"Plan_Date\": null,  //计划生产时间\n" +
-                "\t\"Actual_Date\": null, //实际生产时间\n" +
-                "\t\"Complete_Date\": null //实际完成时间\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
                 "}, {\n" +
+                "\t\"ID\": 2,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"1-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "}, {\n" +
+                "\t\"ID\": 3,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"2-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "}, {\n" +
+                "\t\"ID\": 4,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"2-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "}, {\n" +
+                "\t\"ID\": 5,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"3-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 6,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"3-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
                 "\t\"ID\": 7,\n" +
                 "\t\"Order_Id\": \"165515353\",\n" +
-                "\t\"MTL_No\": \"31100-T527-000000\",\n" +
-                "\t\"MTL_Name\": \"SR650车架总成（白坯）\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
                 "\t\"Tray_Type\": \"KL100\",\n" +
-                "\t\"StationNo\": \"10-A\",\n" +
+                "\t\"StationNo\": \"4-A\",\n" +
                 "\t\"Production_Qty\": 100,\n" +
                 "\t\"Actual_Qty\": 0,\n" +
                 "\t\"State\": 0,\n" +
@@ -135,10 +240,304 @@ public class IndexController {
                 "}, {\n" +
                 "\t\"ID\": 8,\n" +
                 "\t\"Order_Id\": \"165515353\",\n" +
-                "\t\"MTL_No\": \"31100-T527-000000\",\n" +
-                "\t\"MTL_Name\": \"SR650车架总成（白坯）\",\n" +
-                "\t\"Tray_Type\": \"NC450\",\n" +
-                "\t\"StationNo\": \"2-A\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"4-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 9,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"5-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 10,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"5-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 11,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"6-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 12,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"6-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 13,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"7-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 14,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"7-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 15,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"8-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 16,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"8-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 17,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"9-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 18,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"9-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 19,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"10-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 20,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"10-B\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 21,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"11-A\",\n" +
+                "\t\"Production_Qty\": 100,\n" +
+                "\t\"Actual_Qty\": 0,\n" +
+                "\t\"State\": 0,\n" +
+                "\t\"Task_State\": 0,\n" +
+                "\t\"Batch\": null,\n" +
+                "\t\"Priority\": null,\n" +
+                "\t\"Remark\": null,\n" +
+                "\t\"Create_Date\": \"2021-06-20 21:16:49\",\n" +
+                "\t\"Create_UserId\": \"管理员\",\n" +
+                "\t\"Update_Date\": null,\n" +
+                "\t\"Update_UserId\": null,\n" +
+                "\t\"Plan_Date\": null,\n" +
+                "\t\"Actual_Date\": null,\n" +
+                "\t\"Complete_Date\": null\n" +
+                "},{\n" +
+                "\t\"ID\": 22,\n" +
+                "\t\"Order_Id\": \"165515353\",\n" +
+                "\t\"MTL_No\": \"31100-J210-000000\",\n" +
+                "\t\"MTL_Name\": \"ZS150-76(Z2)车架焊接工艺\",\n" +
+                "\t\"Tray_Type\": \"KL100\",\n" +
+                "\t\"StationNo\": \"11-B\",\n" +
                 "\t\"Production_Qty\": 100,\n" +
                 "\t\"Actual_Qty\": 0,\n" +
                 "\t\"State\": 0,\n" +

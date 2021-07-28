@@ -6,7 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcuticon"href="../resources/favicon.ico"th:href="@{/static/favicon.ico}">
+    <link rel="shortcuticon" href="../resources/favicon.ico"th:href="@{/static/favicon.ico}">
     <style>
         .t_title {
             width: 100%;
@@ -354,7 +354,8 @@
             $(".Tray_Type").text(data.Tray_Type);
             $(".Order_Id").text(data.Order_Id);
             $(".MTL_No").text(data.MTL_No);
-            $(".img").attr("src","img/"+data.MTL_Name+"/"+StationNo[1]+".JPG")
+            var src="img/"+data.MTL_Name+"/"+StationNo[1]+".jpg";
+            $(".img").attr("src",encodeURI(src));
             var State, Task_State;
             if (data.State == 0) {
                 State = '新建'
